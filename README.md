@@ -201,22 +201,7 @@ Folder **docs** berisi:
 - Menghasilkan keputusan yang cepat
 - Memberikan hasil ranking berdasarkan metode SMART
 
----
-
-# 📜 Lisensi
-
-Project ini dibuat untuk memenuhi tugas mata kuliah **Sistem Pendukung Keputusan** Universitas Ahmad Dahlan.
-
----
-
-## ⭐ Repository
-
-Apabila repository ini bermanfaat, silakan berikan ⭐ pada repository GitHub ini.
-
----
 
 **link google docs : https://docs.google.com/document/d/1iEsUzIc1gsY3VqYbA9f18b_RJqL4dTYQGc12p7FCXzw/edit?tab=t.0**
 
-**Universitas Ahmad Dahlan**  
-Program Studi Sistem Informasi  
-2026
+
