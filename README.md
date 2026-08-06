@@ -1,59 +1,266 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 Sistem Pendukung Keputusan Penentuan Penerima Beasiswa Menggunakan Metode SMART
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-12-red)
+![PHP](https://img.shields.io/badge/PHP-8-blue)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
+![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
+![License](https://img.shields.io/badge/License-Educational-green)
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📖 Deskripsi
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Sistem Pendukung Keputusan (SPK) Penentuan Penerima Beasiswa merupakan aplikasi berbasis web yang dirancang untuk membantu proses seleksi penerima beasiswa secara objektif, cepat, dan transparan menggunakan metode **SMART (Simple Multi Attribute Rating Technique)**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Metode SMART digunakan untuk memberikan bobot pada setiap kriteria sehingga menghasilkan nilai akhir dan ranking calon penerima beasiswa berdasarkan hasil perhitungan.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+# 👥 Anggota Kelompok
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| NIM | Nama | Role |
+|------|------|------|
+|2200016151|Aminuddin Setya Wibawa|Project Manager & System Analyst|
+|2200016152|Akbar Febrian Amar|UI/UX Designer|
+|2200016148|Izzuddin Hammam Ulhaq|Front-End Developer|
+|2200016025|M Subki|System & Database Designer|
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# 🚀 Teknologi
 
-### Premium Partners
+- Laravel 12
+- PHP 8
+- Bootstrap 5
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- GitHub
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+# 📌 Metode SMART
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Tahapan metode SMART yang digunakan pada sistem:
 
-## Code of Conduct
+1. Menentukan alternatif (Mahasiswa)
+2. Menentukan kriteria
+3. Menentukan bobot
+4. Normalisasi bobot
+5. Menghitung nilai Utility
+6. Menghitung nilai akhir
+7. Menentukan ranking
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Rumus SMART
 
-## Security Vulnerabilities
+```
+Vi = Σ (Wj × Uij)
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Keterangan:
 
-## License
+- **Vi** = Nilai Akhir
+- **Wj** = Bobot Kriteria
+- **Uij** = Nilai Utility
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+# 📋 Fitur Sistem
+
+## Admin
+
+- Login
+- Dashboard
+- Kelola Mahasiswa
+- Kelola Kriteria
+- Kelola Sub Kriteria
+- Input Penilaian
+- Perhitungan SMART
+- Ranking Penerima Beasiswa
+- Laporan
+
+## Mahasiswa
+
+- Login
+- Mengisi Data Diri
+- Upload Berkas
+- Melihat Hasil Seleksi
+
+---
+
+# 📂 Struktur Project
+
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+
+artisan
+composer.json
+package.json
+README.md
+```
+
+---
+
+# 📊 Diagram Sistem
+
+Project ini dilengkapi dengan:
+
+- BPMN
+- Use Case Diagram
+- ERD
+- Activity Diagram
+- Flowchart
+- Arsitektur Sistem
+
+---
+
+# 🖼 Screenshot Aplikasi
+
+## Login
+
+*(Tambahkan Screenshot Login)*
+
+---
+
+## Dashboard
+
+*(Tambahkan Screenshot Dashboard)*
+
+---
+
+## Data Mahasiswa
+
+*(Tambahkan Screenshot Data Mahasiswa)*
+
+---
+
+## Data Kriteria
+
+*(Tambahkan Screenshot Data Kriteria)*
+
+---
+
+## Input Penilaian
+
+*(Tambahkan Screenshot Penilaian)*
+
+---
+
+## Perhitungan SMART
+
+*(Tambahkan Screenshot Perhitungan)*
+
+---
+
+## Ranking
+
+*(Tambahkan Screenshot Ranking)*
+
+---
+
+# ⚙ Cara Instalasi
+
+Clone Repository
+
+```bash
+git clone https://github.com/AminudinSetyaW260404/metode-smart-skbm.git
+```
+
+Masuk Folder
+
+```bash
+cd metode-smart-skbm
+```
+
+Install Dependency
+
+```bash
+composer install
+```
+
+Install Node
+
+```bash
+npm install
+```
+
+Copy File Environment
+
+```bash
+cp .env.example .env
+```
+
+Generate Key
+
+```bash
+php artisan key:generate
+```
+
+Migrasi Database
+
+```bash
+php artisan migrate
+```
+
+Jalankan Server
+
+```bash
+php artisan serve
+```
+
+Buka Browser
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# 📁 Dokumentasi
+
+Folder **docs** berisi:
+
+- Laporan Proyek
+- PPT Presentasi
+- BPMN
+- Use Case
+- ERD
+- Activity Diagram
+- Flowchart
+
+---
+
+# 📌 Tujuan Sistem
+
+- Mempermudah proses seleksi beasiswa
+- Mengurangi subjektivitas penilaian
+- Menghasilkan keputusan yang cepat
+- Memberikan hasil ranking berdasarkan metode SMART
+
+---
+
+# 📜 Lisensi
+
+Project ini dibuat untuk memenuhi tugas mata kuliah **Sistem Pendukung Keputusan** Universitas Ahmad Dahlan.
+
+---
+
+## ⭐ Repository
+
+Apabila repository ini bermanfaat, silakan berikan ⭐ pada repository GitHub ini.
+
+---
+
+**Universitas Ahmad Dahlan**  
+Program Studi Sistem Informasi  
+2026
