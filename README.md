@@ -215,6 +215,8 @@ Apabila repository ini bermanfaat, silakan berikan ⭐ pada repository GitHub in
 
 ---
 
+**link google docs : https://docs.google.com/document/d/1iEsUzIc1gsY3VqYbA9f18b_RJqL4dTYQGc12p7FCXzw/edit?tab=t.0**
+
 **Universitas Ahmad Dahlan**  
 Program Studi Sistem Informasi  
 2026
